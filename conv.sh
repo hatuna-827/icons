@@ -1,4 +1,5 @@
-rm -f *.svg
+rm -f svg/*.svg
+cd xml
 for file in *.xml; do
-    cp "$file" "${file%.xml}.svg"
+    cp "$file" "../svg/${file%.xml}.svg"
 done
